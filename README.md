@@ -2,7 +2,7 @@
 Сервис, в котором можно публиковать посты, находить друзей, добавлять их в друзья и читать их новости.
 
 # Запуск
-- https://xatepk.github.io/auth
+- https://xatepk.github.io/social-network-frontend/
 <br/> Или
 - Склонировать репозиторить и  запустить команду npm start
 - Склонировать https://github.com/xatepk/social-network-api и запустить команду npm start
