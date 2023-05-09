@@ -3,6 +3,7 @@
 
 # Запуск
 - https://xatepk.github.io/social-network-frontend/
+- Бэкенд выложен на fly.io и доступен по адресу https://ill-gray-pike-ring.cyclic.app/, но он не загружает фотографии корректно. (для тестирования полного функционала можно воспользоваться пользователем - user: 123@123.com password: 1q2w3e4r)
 <br/> Или
 - Склонировать репозиторить и  запустить команду npm start
 - Склонировать https://github.com/xatepk/social-network-api и запустить команду npm start
