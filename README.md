@@ -4,8 +4,8 @@
 # Запуск
 - https://xatepk.github.io/auth
 <br/> Или
-- В папке backend запустить команду npm run start
-- В папке frontend запустить команду npm run start
+- Склонировать репозиторить и  запустить команду npm start
+- Склонировать https://github.com/xatepk/social-network-api и запустить команду npm start
 
 # Реализованные задачи:
 - Разработаны frontend и backend для сервиса.
