@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Социальная сеть
+Сервис, в котором можно публиковать посты, находить друзей, добавлять их в друзья и читать их новости.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Запуск
+- https://xatepk.github.io/auth
+<br/> Или
+- В папке backend запустить команду npm run start
+- В папке frontend запустить команду npm run start
 
-## Available Scripts
+# Реализованные задачи:
+- Разработаны frontend и backend для сервиса.
+- Корректно работает навигация между страницами и ссылки на внешние ресурсы.
+- Отзывчивая вёрстка, которая корректно тянется на всех промежуточных разрешениях.
+- Отсутствуют ошибки валидации при сборке приложения или в валидаторе.
+- В коде используется семантическая разметка: применяются семантические теги.
+- Каркас макета реализован на Flex layout или Grid layout.
+- Все формы валидируются и на стороне клиента.
+- При попытке перейти на несуществующую страницу происходит редирект на страницу «404».
+- На странице «Регистрация» клик по кнопке «Зарегистрироваться» при корректно введённых данных отправляет запрос на роут /signup. Если запрос прошёл успешно, то происходит редирект на страницу /mainpage.
+- JWT Token хранится в localeStorage. Если пользователь закрыл вкладку, а после — вернулся на сайт, данные достаются из локального хранилища при монтировании компонента App.
+- Написаны тесты. (запуск npm run test)
 
-In the project directory, you can run:
+## Задачи для доработки
+- Сделать infinity scroll
+- Разработать мессенджер
+- Сделать адаптив под все разрешения экранов
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Обзор
 
-### `npm test`
+**Интро**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Создание проекта
+- Настройка роутов
+- Разработка и настройка backend
+- Настройка store
+- Верстка
+- Разработка функционала
 
-### `npm run build`
+**Стек**
+- React
+- Redux Toolkit
+- TypeScript
+- Express JS
+- MongoDB
+- SCSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

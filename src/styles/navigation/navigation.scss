@@ -1,0 +1,43 @@
+.navigation {
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #7E6AF3;
+  background-image: url('../../img/icons/auth/bg.svg');
+  background: url('../../img/icons/auth/bg.svg'), linear-gradient(1.09deg, #7E6AF3 0.86%, #6540CD 99.01%) no-repeat center;
+  background-size: cover;
+  font-size: 16px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+    transition: transform 0.2s ease-out;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 35px;
+
+    &_active {
+      background-color: #fff;
+      color:#664EF9;
+    }
+
+    &:hover {
+      opacity: .8;
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.profiles {
+  margin-left: 150px;
+  margin-top: 40px;
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  &__form {
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__input-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    text-decoration: none;
+    text-align: center;
+    max-width: 150px;
+  }
+
+  &__input-file {
+    border: none;
+    overflow: hidden;
+    background-color: transparent;
+    outline: none;
+    color: transparent;
+    margin-bottom: 5px;
+
+    &:before {
+      content: 'Upload';
+      background-color: #664EF9;
+      color: #fff;
+      padding: 10px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    &::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+  }
+
+  &__input-file-done{
+    &:before {
+      content: 'Done';
+      background-color: #4cd289;
+    }
+  }
+}

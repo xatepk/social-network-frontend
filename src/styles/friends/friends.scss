@@ -1,0 +1,53 @@
+.friends {
+  margin-left: 150px;
+
+  &__desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #686868;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  &__list {
+    margin-left: 0;
+    grid-template-columns: repeat(auto-fit, 250px);
+
+    &_row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    &_ma {
+      margin: 3px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+
+    &_mr {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.mainpage {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__user {
+    margin-left: 150px;
+    flex: 1;
+  }
+
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  &__profile-desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__user-info {
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
+  &__profile {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__profile-edit {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../../img/icons/auth/edit.svg') no-repeat center;
+    background-size: cover;
+  }
+}

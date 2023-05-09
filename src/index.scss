@@ -1,0 +1,18 @@
+@import url('./styles/vendor/normalize.scss');
+@import url('./styles/page/page.scss');
+
+*, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('./styles/mainpage/mainpage.scss');
+@import url('./styles/profile/profile.scss');
+@import url('./styles/posts/posts.scss');
+@import url('./styles/friends/friends.scss');
+@import url('./styles/news/news.scss');
+@import url('./styles/navigation/navigation.scss');
+@import url('./styles/auth/auth.scss');
+@import url('./styles/register/register.scss');
+@import url('./styles/notfound/notfound.scss');

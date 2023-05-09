@@ -1,25 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ProtectedRoute from './components/ProtectedRoute';
+import AuthPage from './pages/AuthPage';
+import FriendsDetailPage from './pages/FriendsDetailPage';
+import FriendsPage from './pages/FriendsPage';
+import MainPage from './pages/MainPage';
+import NewsPage from './pages/NewsPage';
+import PageNotFound from './pages/PageNotFound';
+import Profile from './pages/Profile';
+import RegistrationPage from './pages/RegistrationPage';
+import { setupStore } from './store';
+
+const store = setupStore();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <div className='page'>
+          <Routes>
+            <Route path='/auth' element={<AuthPage />}></Route>
+            <Route path='/register' element={<RegistrationPage />}></Route>
+            <Route element={<ProtectedRoute />}>
+              <Route element={<MainPage/>} path="/" />
+            </Route>
+            <Route element={<ProtectedRoute />}>
+              <Route element={<Profile/>} path='/profile' />
+            </Route>
+            <Route element={<ProtectedRoute />}>
+              <Route element={<NewsPage/>} path='/news' />
+            </Route>
+            <Route element={<ProtectedRoute />}>
+              <Route element={<FriendsPage/>} path='/friends' />
+            </Route>
+            <Route element={<ProtectedRoute />}>
+              <Route element={<FriendsDetailPage/>} path='/friends/:id' />
+            </Route>
+            <Route path="*" element={<PageNotFound />}></Route>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
