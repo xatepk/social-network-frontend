@@ -1,8 +1,8 @@
 import React from "react";
 import { IPost } from "../models/models";
-import postLogo from '../img/posts/postImage.svg'
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
 import { deletePost, fetchFriendsPosts, fetchLikePost } from "../store/actions/postsActions";
+import { postImage } from "../config";
 
 interface PostProps {
   post: IPost,
@@ -24,7 +24,7 @@ function PostItem({ post, owner }: PostProps) {
     }
   }
 
-  const postImage = post.image ? `${process.env.REACT_APP_BASE_URL + post.image }` : postLogo;
+  const postLogo = post.image ? `${process.env.REACT_APP_BASE_URL + post.image }` : postImage;
 
   const deleteHandler = async () => {
     if (access) {
@@ -34,7 +34,7 @@ function PostItem({ post, owner }: PostProps) {
 
   return (
     <li className="posts__card">
-      <img src={postImage}
+      <img src={postLogo}
         alt="фото новости" className="posts__image" />
       <p className="posts__desc">{post.description}</p>
       <div className="posts__bottom">
