@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { avatarImage } from "../config";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
-import avatarLogo from '../img/icons/auth/avatar.svg';
 import { IUser } from "../models/models";
 import { fetchOwnerPosts } from "../store/actions/postsActions";
 import PostItem from "./PostItem";
@@ -18,7 +18,7 @@ function UserProfile({ owner = false, userData }: ProfileProps) {
   const { posts } = useAppSelector(state => state.posts);
   const { loading } = useAppSelector(state => state.auth);
 
-  const avatarImage = userData?.avatar ? `${process.env.REACT_APP_BASE_URL + userData?.avatar}` : avatarLogo;
+  const avatarLogo = userData?.avatar ? `${process.env.REACT_APP_BASE_URL + userData?.avatar}` : avatarImage;
 
   useEffect(() => {
     (async () => {
@@ -35,7 +35,7 @@ function UserProfile({ owner = false, userData }: ProfileProps) {
             {owner && <h2 className="mainpage__title">Добро пожаловать, {userData?.username}</h2>}
             <div className="mainpage__profile">
               <div className="mainpage__profile-desc">
-                <img className="mainpage__avatar" src={avatarImage} alt="" />
+                <img className="mainpage__avatar" src={avatarLogo} alt="" />
                 {!owner && !!userData?.username && <p className="mainpage__user-info">{userData.username}</p>}
                 {!!userData?.age && <p className="mainpage__user-info">Возраст: {userData.age}</p>}
                 {!!userData?.university && <p className="mainpage__user-info">Вуз: {userData.university}</p>}
