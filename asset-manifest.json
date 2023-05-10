@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/social-network-frontend/static/css/main.11c536ce.css",
-    "main.js": "/social-network-frontend/static/js/main.f6155397.js",
+    "main.js": "/social-network-frontend/static/js/main.7cf165de.js",
     "static/media/bg.svg": "/social-network-frontend/static/media/bg.947ebee8f43f142f7835.svg",
     "static/media/mail.svg": "/social-network-frontend/static/media/mail.e460237883afb28c703f647ad2ff98d6.svg",
     "static/media/edit.svg": "/social-network-frontend/static/media/edit.a67629de1d92118398a7.svg",
@@ -16,10 +16,10 @@
     "static/media/red-heart-icon.svg": "/social-network-frontend/static/media/red-heart-icon.db5f2c5f77bae45dfa19.svg",
     "static/media/str.svg": "/social-network-frontend/static/media/str.80e8d3c57076d19ce3ce.svg",
     "main.11c536ce.css.map": "/social-network-frontend/static/css/main.11c536ce.css.map",
-    "main.f6155397.js.map": "/social-network-frontend/static/js/main.f6155397.js.map"
+    "main.7cf165de.js.map": "/social-network-frontend/static/js/main.7cf165de.js.map"
   },
   "entrypoints": [
     "static/css/main.11c536ce.css",
-    "static/js/main.f6155397.js"
+    "static/js/main.7cf165de.js"
   ]
 }
